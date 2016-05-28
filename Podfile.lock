@@ -14,22 +14,25 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CYLTabBarController (1.4.1)
   - Masonry (1.0.0)
   - SVProgressHUD (2.0.3)
   - YYModel (1.0.3)
 
 DEPENDENCIES:
   - AFNetworking
+  - CYLTabBarController
   - Masonry
   - SVProgressHUD
   - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CYLTabBarController: dbe19e17903b2343c0511263d8f5ccc4a83aa5fc
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
 
-PODFILE CHECKSUM: 2dfadc8b4de820e8173e02411c7db5455c2a816a
+PODFILE CHECKSUM: 5e19f895b83328b82dac4a4d5467f55040ded436
 
 COCOAPODS: 1.0.0

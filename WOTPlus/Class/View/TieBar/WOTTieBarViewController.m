@@ -7,8 +7,10 @@
 //
 
 #import "WOTTieBarViewController.h"
+#import "WOTTieBarWebView.h"
 
 @interface WOTTieBarViewController ()
+@property (nonatomic, strong) WOTTieBarWebView * webView;
 
 @end
 
@@ -16,22 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-self.view.backgroundColor = randomColor
+    self.webView.webUrlString = @"http://tieba.baidu.com/f?kw=%CC%B9%BF%CB%CA%C0%BD%E7&fr=ala0&tpl=5";
+    [self.view addSubview:self.webView];
+
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//MARK:-懒加载
+- (WOTTieBarWebView *)webView {
+    if (!_webView) {
+        self.webView = [[WOTTieBarWebView alloc] initWithFrame:self.view.frame];
+        _webView.scalesPageToFit = YES;
+        _webView.scrollView.directionalLockEnabled = YES;
+        _webView.scrollView.showsHorizontalScrollIndicator = NO;
+        [self.view addSubview:_webView];
+    }
+    return _webView;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

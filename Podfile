@@ -14,6 +14,7 @@ pod 'SVProgressHUD'
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'YYModel'
+pod 'CYLTabBarController'
 
 
   end
