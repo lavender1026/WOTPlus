@@ -14,7 +14,7 @@ pod 'SVProgressHUD'
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'YYModel'
-pod 'MJRefresh'
+
 
   end
 

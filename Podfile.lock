@@ -15,24 +15,21 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Masonry (1.0.0)
-  - MJRefresh (3.1.0)
   - SVProgressHUD (2.0.3)
   - YYModel (1.0.3)
 
 DEPENDENCIES:
   - AFNetworking
   - Masonry
-  - MJRefresh
   - SVProgressHUD
   - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
-  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
 
-PODFILE CHECKSUM: 6e83160136e86853264b13018d08af0474888225
+PODFILE CHECKSUM: 2dfadc8b4de820e8173e02411c7db5455c2a816a
 
 COCOAPODS: 1.0.0

@@ -2,7 +2,7 @@
 //  WOTTieBarViewController.m
 //  WOTPlus
 //
-//  Created by admin on 16/5/25.
+//  Created by admin on 16/5/26.
 //  Copyright © 2016年 DirkChen. All rights reserved.
 //
 
@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+self.view.backgroundColor = randomColor
 }
 
 - (void)didReceiveMemoryWarning {

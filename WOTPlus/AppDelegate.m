@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WOTMainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
+    self.window.backgroundColor = [UIColor whiteColor];
+    WOTMainTabBarController *tabBar = [[WOTMainTabBarController alloc]init];
+    //    [[UIApplication sharedApplication].keyWindow setRootViewController:tabBar];
+    //    [self.window setRootViewController:[[WOTMainTabBarController alloc]init]];
+    self.window.rootViewController =tabBar;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

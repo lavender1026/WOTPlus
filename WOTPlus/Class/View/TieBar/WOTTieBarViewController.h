@@ -2,7 +2,7 @@
 //  WOTTieBarViewController.h
 //  WOTPlus
 //
-//  Created by admin on 16/5/25.
+//  Created by admin on 16/5/26.
 //  Copyright © 2016年 DirkChen. All rights reserved.
 //
 

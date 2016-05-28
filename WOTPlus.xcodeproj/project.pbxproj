@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		52E0C0DC16C6637D82FD4920 /* libPods-WOTPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 393674C9ED6FBB35941EDF1D /* libPods-WOTPlus.a */; };
 		5DEEFFD6A4A5F5479558FA90 /* libPods-WOTPlus-WOTPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 159ABD448A8723EC0F8B8C90 /* libPods-WOTPlus-WOTPlusTests.a */; };
-		84559A6A1CF5842F008C591B /* WOTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84559A691CF5842F008C591B /* WOTMainViewController.m */; };
-		84559A6D1CF58839008C591B /* WOTNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84559A6C1CF58839008C591B /* WOTNavController.m */; };
-		84559A701CF58FA9008C591B /* WOTTieBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84559A6F1CF58FA9008C591B /* WOTTieBarViewController.m */; };
-		84559A741CF58FCC008C591B /* WOTTieBarWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84559A731CF58FCC008C591B /* WOTTieBarWebView.m */; };
-		84559A781CF592FC008C591B /* WOTLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84559A771CF592FC008C591B /* WOTLoginView.m */; };
-		84559A7B1CF59326008C591B /* WOTMainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84559A7A1CF59326008C591B /* WOTMainTabBar.m */; };
+		842EF3511CF97CCA001B775E /* WOTGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF33B1CF97CCA001B775E /* WOTGuideViewController.m */; };
+		842EF3521CF97CCA001B775E /* WOTHomeNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF33E1CF97CCA001B775E /* WOTHomeNavController.m */; };
+		842EF3531CF97CCA001B775E /* WOTHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF3401CF97CCA001B775E /* WOTHomeTableViewController.m */; };
+		842EF3541CF97CCA001B775E /* WOTMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF3431CF97CCA001B775E /* WOTMainTabBarController.m */; };
+		842EF3551CF97CCA001B775E /* WOTPersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF3461CF97CCA001B775E /* WOTPersonTableViewController.m */; };
+		842EF3561CF97CCA001B775E /* WOTSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF3491CF97CCA001B775E /* WOTSettingTableViewController.m */; };
+		842EF3571CF97CCA001B775E /* WOTTieBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF34C1CF97CCA001B775E /* WOTTieBarViewController.m */; };
+		842EF3581CF97CCA001B775E /* WOTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF34F1CF97CCA001B775E /* WOTVideoViewController.m */; };
 		84B9D5CC1CF3F670006FC03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D5CB1CF3F670006FC03C /* main.m */; };
 		84B9D5CF1CF3F670006FC03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D5CE1CF3F670006FC03C /* AppDelegate.m */; };
 		84B9D5D71CF3F670006FC03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B9D5D61CF3F670006FC03C /* Assets.xcassets */; };
@@ -50,19 +52,23 @@
 		393674C9ED6FBB35941EDF1D /* libPods-WOTPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WOTPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4237DFDB600A5B708640D26B /* Pods-WOTPlus-WOTPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus-WOTPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus-WOTPlusTests/Pods-WOTPlus-WOTPlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		67019A7FEEA6D60BE80952EA /* Pods-WOTPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus/Pods-WOTPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		842EF33A1CF97CCA001B775E /* WOTGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTGuideViewController.h; sourceTree = "<group>"; };
+		842EF33B1CF97CCA001B775E /* WOTGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTGuideViewController.m; sourceTree = "<group>"; };
+		842EF33D1CF97CCA001B775E /* WOTHomeNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTHomeNavController.h; sourceTree = "<group>"; };
+		842EF33E1CF97CCA001B775E /* WOTHomeNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTHomeNavController.m; sourceTree = "<group>"; };
+		842EF33F1CF97CCA001B775E /* WOTHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTHomeTableViewController.h; sourceTree = "<group>"; };
+		842EF3401CF97CCA001B775E /* WOTHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTHomeTableViewController.m; sourceTree = "<group>"; };
+		842EF3421CF97CCA001B775E /* WOTMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTMainTabBarController.h; sourceTree = "<group>"; };
+		842EF3431CF97CCA001B775E /* WOTMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTMainTabBarController.m; sourceTree = "<group>"; };
+		842EF3451CF97CCA001B775E /* WOTPersonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTPersonTableViewController.h; sourceTree = "<group>"; };
+		842EF3461CF97CCA001B775E /* WOTPersonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTPersonTableViewController.m; sourceTree = "<group>"; };
+		842EF3481CF97CCA001B775E /* WOTSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTSettingTableViewController.h; sourceTree = "<group>"; };
+		842EF3491CF97CCA001B775E /* WOTSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTSettingTableViewController.m; sourceTree = "<group>"; };
+		842EF34B1CF97CCA001B775E /* WOTTieBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTTieBarViewController.h; sourceTree = "<group>"; };
+		842EF34C1CF97CCA001B775E /* WOTTieBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTTieBarViewController.m; sourceTree = "<group>"; };
+		842EF34E1CF97CCA001B775E /* WOTVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTVideoViewController.h; sourceTree = "<group>"; };
+		842EF34F1CF97CCA001B775E /* WOTVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTVideoViewController.m; sourceTree = "<group>"; };
 		84559A671CF57BF2008C591B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		84559A681CF5842F008C591B /* WOTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTMainViewController.h; sourceTree = "<group>"; };
-		84559A691CF5842F008C591B /* WOTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTMainViewController.m; sourceTree = "<group>"; };
-		84559A6B1CF58839008C591B /* WOTNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTNavController.h; sourceTree = "<group>"; };
-		84559A6C1CF58839008C591B /* WOTNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTNavController.m; sourceTree = "<group>"; };
-		84559A6E1CF58FA9008C591B /* WOTTieBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOTTieBarViewController.h; path = WOTPlus/Class/View/TieBar/WOTTieBarViewController.h; sourceTree = SOURCE_ROOT; };
-		84559A6F1CF58FA9008C591B /* WOTTieBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOTTieBarViewController.m; path = WOTPlus/Class/View/TieBar/WOTTieBarViewController.m; sourceTree = SOURCE_ROOT; };
-		84559A721CF58FCC008C591B /* WOTTieBarWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOTTieBarWebView.h; path = WOTPlus/Class/View/TieBar/WOTTieBarWebView.h; sourceTree = SOURCE_ROOT; };
-		84559A731CF58FCC008C591B /* WOTTieBarWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOTTieBarWebView.m; path = WOTPlus/Class/View/TieBar/WOTTieBarWebView.m; sourceTree = SOURCE_ROOT; };
-		84559A761CF592FC008C591B /* WOTLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTLoginView.h; sourceTree = "<group>"; };
-		84559A771CF592FC008C591B /* WOTLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTLoginView.m; sourceTree = "<group>"; };
-		84559A791CF59326008C591B /* WOTMainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTMainTabBar.h; sourceTree = "<group>"; };
-		84559A7A1CF59326008C591B /* WOTMainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTMainTabBar.m; sourceTree = "<group>"; };
 		84B9D5C71CF3F670006FC03C /* WOTPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOTPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B9D5CB1CF3F670006FC03C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84B9D5CD1CF3F670006FC03C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,24 +144,115 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		84559A711CF58FB5008C591B /* View */ = {
+		842EF3351CF97CCA001B775E /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				84559A721CF58FCC008C591B /* WOTTieBarWebView.h */,
-				84559A731CF58FCC008C591B /* WOTTieBarWebView.m */,
+				842EF3361CF97CCA001B775E /* Model */,
+				842EF3371CF97CCA001B775E /* Tools */,
+				842EF3381CF97CCA001B775E /* View */,
+				842EF3501CF97CCA001B775E /* ViewModel */,
 			);
-			name = View;
+			path = Class;
 			sourceTree = "<group>";
 		};
-		84559A751CF58FDE008C591B /* View */ = {
+		842EF3361CF97CCA001B775E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				84559A761CF592FC008C591B /* WOTLoginView.h */,
-				84559A771CF592FC008C591B /* WOTLoginView.m */,
-				84559A791CF59326008C591B /* WOTMainTabBar.h */,
-				84559A7A1CF59326008C591B /* WOTMainTabBar.m */,
 			);
-			name = View;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		842EF3371CF97CCA001B775E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		842EF3381CF97CCA001B775E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				842EF3391CF97CCA001B775E /* Guide */,
+				842EF33C1CF97CCA001B775E /* Home */,
+				842EF3411CF97CCA001B775E /* Main */,
+				842EF3441CF97CCA001B775E /* Person */,
+				842EF3471CF97CCA001B775E /* Setting */,
+				842EF34A1CF97CCA001B775E /* TieBar */,
+				842EF34D1CF97CCA001B775E /* Video */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		842EF3391CF97CCA001B775E /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				842EF33A1CF97CCA001B775E /* WOTGuideViewController.h */,
+				842EF33B1CF97CCA001B775E /* WOTGuideViewController.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		842EF33C1CF97CCA001B775E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				842EF33D1CF97CCA001B775E /* WOTHomeNavController.h */,
+				842EF33E1CF97CCA001B775E /* WOTHomeNavController.m */,
+				842EF33F1CF97CCA001B775E /* WOTHomeTableViewController.h */,
+				842EF3401CF97CCA001B775E /* WOTHomeTableViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		842EF3411CF97CCA001B775E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				842EF3421CF97CCA001B775E /* WOTMainTabBarController.h */,
+				842EF3431CF97CCA001B775E /* WOTMainTabBarController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		842EF3441CF97CCA001B775E /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				842EF3451CF97CCA001B775E /* WOTPersonTableViewController.h */,
+				842EF3461CF97CCA001B775E /* WOTPersonTableViewController.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		842EF3471CF97CCA001B775E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				842EF3481CF97CCA001B775E /* WOTSettingTableViewController.h */,
+				842EF3491CF97CCA001B775E /* WOTSettingTableViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		842EF34A1CF97CCA001B775E /* TieBar */ = {
+			isa = PBXGroup;
+			children = (
+				842EF34B1CF97CCA001B775E /* WOTTieBarViewController.h */,
+				842EF34C1CF97CCA001B775E /* WOTTieBarViewController.m */,
+			);
+			path = TieBar;
+			sourceTree = "<group>";
+		};
+		842EF34D1CF97CCA001B775E /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				842EF34E1CF97CCA001B775E /* WOTVideoViewController.h */,
+				842EF34F1CF97CCA001B775E /* WOTVideoViewController.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		842EF3501CF97CCA001B775E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		84B9D5BE1CF3F670006FC03C = {
@@ -183,7 +280,7 @@
 		84B9D5C91CF3F670006FC03C /* WOTPlus */ = {
 			isa = PBXGroup;
 			children = (
-				84B9D5FD1CF4073E006FC03C /* Class */,
+				842EF3351CF97CCA001B775E /* Class */,
 				84B9D5CD1CF3F670006FC03C /* AppDelegate.h */,
 				84B9D5CE1CF3F670006FC03C /* AppDelegate.m */,
 				84B9D5D61CF3F670006FC03C /* Assets.xcassets */,
@@ -219,88 +316,6 @@
 				84B9D5F11CF3F670006FC03C /* Info.plist */,
 			);
 			path = WOTPlusUITests;
-			sourceTree = "<group>";
-		};
-		84B9D5FD1CF4073E006FC03C /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				84B9D6001CF4073E006FC03C /* Tools */,
-				84B9D5FF1CF4073E006FC03C /* Model */,
-				84B9D6041CF4073E006FC03C /* View */,
-				84B9D6141CF4073E006FC03C /* ViewModel */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		84B9D5FF1CF4073E006FC03C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		84B9D6001CF4073E006FC03C /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		84B9D6041CF4073E006FC03C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				84B9D6051CF4073E006FC03C /* Setting */,
-				84B9D6091CF4073E006FC03C /* Video */,
-				84B9D60C1CF4073E006FC03C /* Main */,
-				84B9D6101CF4073E006FC03C /* TieBar */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		84B9D6051CF4073E006FC03C /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Setting;
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		84B9D6091CF4073E006FC03C /* Video */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Video;
-			path = Home;
-			sourceTree = "<group>";
-		};
-		84B9D60C1CF4073E006FC03C /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				84559A751CF58FDE008C591B /* View */,
-				84559A681CF5842F008C591B /* WOTMainViewController.h */,
-				84559A691CF5842F008C591B /* WOTMainViewController.m */,
-				84559A6B1CF58839008C591B /* WOTNavController.h */,
-				84559A6C1CF58839008C591B /* WOTNavController.m */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		84B9D6101CF4073E006FC03C /* TieBar */ = {
-			isa = PBXGroup;
-			children = (
-				84559A711CF58FB5008C591B /* View */,
-				84559A6E1CF58FA9008C591B /* WOTTieBarViewController.h */,
-				84559A6F1CF58FA9008C591B /* WOTTieBarViewController.m */,
-			);
-			name = TieBar;
-			path = Message;
-			sourceTree = "<group>";
-		};
-		84B9D6141CF4073E006FC03C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,14 +582,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84559A6D1CF58839008C591B /* WOTNavController.m in Sources */,
-				84559A6A1CF5842F008C591B /* WOTMainViewController.m in Sources */,
-				84559A781CF592FC008C591B /* WOTLoginView.m in Sources */,
+				842EF3551CF97CCA001B775E /* WOTPersonTableViewController.m in Sources */,
+				842EF3561CF97CCA001B775E /* WOTSettingTableViewController.m in Sources */,
 				84B9D5CF1CF3F670006FC03C /* AppDelegate.m in Sources */,
-				84559A741CF58FCC008C591B /* WOTTieBarWebView.m in Sources */,
-				84559A7B1CF59326008C591B /* WOTMainTabBar.m in Sources */,
+				842EF3581CF97CCA001B775E /* WOTVideoViewController.m in Sources */,
+				842EF3571CF97CCA001B775E /* WOTTieBarViewController.m in Sources */,
+				842EF3521CF97CCA001B775E /* WOTHomeNavController.m in Sources */,
 				84B9D5CC1CF3F670006FC03C /* main.m in Sources */,
-				84559A701CF58FA9008C591B /* WOTTieBarViewController.m in Sources */,
+				842EF3511CF97CCA001B775E /* WOTGuideViewController.m in Sources */,
+				842EF3531CF97CCA001B775E /* WOTHomeTableViewController.m in Sources */,
+				842EF3541CF97CCA001B775E /* WOTMainTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
