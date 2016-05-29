@@ -39,49 +39,33 @@
 
 - (void)setupChildControllers
 {
-    //    home
-    WOTHomeTableViewController *homeVc = [[WOTHomeTableViewController alloc]init];
-    WOTHomeNavController *homeNav = [[WOTHomeNavController alloc]initWithRootViewController:homeVc];
-    //    homeNav.tabBarItem.title = @"首页";
-    //    [homeNav.tabBarItem setImage:[UIImage imageNamed:@"tabbar_home"]];
-    //    [homeNav.tabBarItem setSelectedImage:[UIImage imageNamed:@"tabbar_home_selected"]];
+    //    alloc init
+    WOTHomeTableViewController *homeVc   = [[WOTHomeTableViewController alloc]init];
+    WOTHomeNavController *homeNav        = [[WOTHomeNavController alloc]initWithRootViewController:homeVc];
+
+    WOTGuideViewController *guideVc      = [[WOTGuideViewController alloc]init];
+
+    WOTVideoViewController *videoVc      = [[WOTVideoViewController alloc]init];
+    
+    WOTTieBarViewController *tieBarVc    = [[WOTTieBarViewController alloc]init];
+
+    WOTSettingTableViewController *setVc = [[WOTSettingTableViewController alloc]init];
+   
+
+// 赋值
     [self addChildViewController:homeNav title:@"首页" imageName:@"tabbar_home"];
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-//    guide
-    WOTGuideViewController *guideVc = [[WOTGuideViewController alloc]init];
-//    guideVc.tabBarItem.title = @"攻略";
+
     [self addChildViewController:guideVc title:@"攻略" imageName:@"tabbar_discover"];
     
-//    video
-    WOTVideoViewController *videoVc = [[WOTVideoViewController alloc]init];
-//    videoVc.tabBarItem.title = @"视频";
-    [self addChildViewController:videoVc title:@"视频" imageName:nil];
+    [self addChildViewController:videoVc title:@"视频" imageName:@"tabbar_home"];
     
-//    TieBar
-    WOTTieBarViewController *tieBarVc = [[WOTTieBarViewController alloc]init];
-//    tieBarVc.tabBarItem.title = @"贴吧";
     [self addChildViewController:tieBarVc title:@"贴吧" imageName:@"tabbar_message_center"];
-//    setting
-    WOTSettingTableViewController *setVc = [[WOTSettingTableViewController alloc]init];
-//    WOTSettingNavController *setNav = [[WOTSettingNavController alloc]initWithRootViewController:setVc];
-//    setNav.tabBarItem.title = @"设置";
+
     [self addChildViewController:setVc title:@"设置" imageName:@"tabbar_profile"];
-//    self.viewControllers = @[homeNav,guideVc,videoVc,tieBarVc,setNav];
-    
-    
+
+
 }
+
 
 - (void)addChildViewController: (UIViewController *)childController title: (NSString *)title imageName: (NSString *)imageName
 {

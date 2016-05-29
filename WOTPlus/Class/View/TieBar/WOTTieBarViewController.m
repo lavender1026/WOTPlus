@@ -6,12 +6,12 @@
 //  Copyright © 2016年 DirkChen. All rights reserved.
 //
 
+
 #import "WOTTieBarViewController.h"
 #import "WOTTieBarWebView.h"
 
 @interface WOTTieBarViewController ()
 @property (nonatomic, strong) WOTTieBarWebView * webView;
-
 @end
 
 @implementation WOTTieBarViewController
