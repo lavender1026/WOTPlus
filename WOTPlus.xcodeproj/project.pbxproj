@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30C01A2797BB239769FDF3F5 /* libPods-WOTPlus-WOTPlusUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B40BED5026A69CDB83CC2F /* libPods-WOTPlus-WOTPlusUITests.a */; };
 		52E0C0DC16C6637D82FD4920 /* libPods-WOTPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 393674C9ED6FBB35941EDF1D /* libPods-WOTPlus.a */; };
 		5DEEFFD6A4A5F5479558FA90 /* libPods-WOTPlus-WOTPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 159ABD448A8723EC0F8B8C90 /* libPods-WOTPlus-WOTPlusTests.a */; };
 		842EF3511CF97CCA001B775E /* WOTGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF33B1CF97CCA001B775E /* WOTGuideViewController.m */; };
@@ -50,6 +51,8 @@
 		08B68A981757CA4F45F07D57 /* Pods-WOTPlus-WOTPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus-WOTPlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus-WOTPlusTests/Pods-WOTPlus-WOTPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		159ABD448A8723EC0F8B8C90 /* libPods-WOTPlus-WOTPlusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WOTPlus-WOTPlusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1628BE1384F2FD4DE008AE2E /* libPods-WOTPlusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WOTPlusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		207118532EC2B888FD1B58F5 /* Pods-WOTPlus-WOTPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus-WOTPlusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus-WOTPlusUITests/Pods-WOTPlus-WOTPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34B40BED5026A69CDB83CC2F /* libPods-WOTPlus-WOTPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WOTPlus-WOTPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		393674C9ED6FBB35941EDF1D /* libPods-WOTPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WOTPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4237DFDB600A5B708640D26B /* Pods-WOTPlus-WOTPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus-WOTPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus-WOTPlusTests/Pods-WOTPlus-WOTPlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		67019A7FEEA6D60BE80952EA /* Pods-WOTPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus/Pods-WOTPlus.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		842EF34C1CF97CCA001B775E /* WOTTieBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTTieBarViewController.m; sourceTree = "<group>"; };
 		842EF34E1CF97CCA001B775E /* WOTVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTVideoViewController.h; sourceTree = "<group>"; };
 		842EF34F1CF97CCA001B775E /* WOTVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTVideoViewController.m; sourceTree = "<group>"; };
+		844A6AC31CFDABD8009D3008 /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = "Pods/../build/Debug-iphoneos/SVProgressHUD/libSVProgressHUD.a"; sourceTree = "<group>"; };
 		84559A671CF57BF2008C591B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		84B9D5C71CF3F670006FC03C /* WOTPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOTPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B9D5CB1CF3F670006FC03C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		A5D5E4EC67F335103451FB87 /* Pods-WOTPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus/Pods-WOTPlus.release.xcconfig"; sourceTree = "<group>"; };
 		BC0E21BB8972CF2DD67D1016 /* libPods-WOTPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WOTPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC8E02908CF5259F5346F2F /* Pods-WOTPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlusTests/Pods-WOTPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECE87BEFC3064249589B9770 /* Pods-WOTPlus-WOTPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus-WOTPlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus-WOTPlusUITests/Pods-WOTPlus-WOTPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0E0E9B0DD31BB63027D848 /* libPods-WOTPlusUITests.a in Frameworks */,
+				30C01A2797BB239769FDF3F5 /* libPods-WOTPlus-WOTPlusUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,10 +130,12 @@
 		17C08F3B398D0F82C10675E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				844A6AC31CFDABD8009D3008 /* libSVProgressHUD.a */,
 				393674C9ED6FBB35941EDF1D /* libPods-WOTPlus.a */,
 				1628BE1384F2FD4DE008AE2E /* libPods-WOTPlusTests.a */,
 				BC0E21BB8972CF2DD67D1016 /* libPods-WOTPlusUITests.a */,
 				159ABD448A8723EC0F8B8C90 /* libPods-WOTPlus-WOTPlusTests.a */,
+				34B40BED5026A69CDB83CC2F /* libPods-WOTPlus-WOTPlusUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +151,8 @@
 				8746FE99287D709D2D95F2AA /* Pods-WOTPlusUITests.release.xcconfig */,
 				08B68A981757CA4F45F07D57 /* Pods-WOTPlus-WOTPlusTests.debug.xcconfig */,
 				4237DFDB600A5B708640D26B /* Pods-WOTPlus-WOTPlusTests.release.xcconfig */,
+				ECE87BEFC3064249589B9770 /* Pods-WOTPlus-WOTPlusUITests.debug.xcconfig */,
+				207118532EC2B888FD1B58F5 /* Pods-WOTPlus-WOTPlusUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -563,7 +573,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WOTPlusUITests/Pods-WOTPlusUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WOTPlus-WOTPlusUITests/Pods-WOTPlus-WOTPlusUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D0F40789B77CAB455C07A270 /* 📦 Copy Pods Resources */ = {
@@ -751,7 +761,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = /Users/admin/Desktop/GitHub/WOTPlus/WOTPlus/PrefixHeader.pch;
 				INFOPLIST_FILE = WOTPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SVProgressHUD",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DirkChen.WOTPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -764,7 +779,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = /Users/admin/Desktop/GitHub/WOTPlus/WOTPlus/PrefixHeader.pch;
 				INFOPLIST_FILE = WOTPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SVProgressHUD",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DirkChen.WOTPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -798,7 +818,7 @@
 		};
 		84B9D5FB1CF3F670006FC03C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F55A76912186C3F8A5EF58 /* Pods-WOTPlusUITests.debug.xcconfig */;
+			baseConfigurationReference = ECE87BEFC3064249589B9770 /* Pods-WOTPlus-WOTPlusUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WOTPlusUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -810,7 +830,7 @@
 		};
 		84B9D5FC1CF3F670006FC03C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8746FE99287D709D2D95F2AA /* Pods-WOTPlusUITests.release.xcconfig */;
+			baseConfigurationReference = 207118532EC2B888FD1B58F5 /* Pods-WOTPlus-WOTPlusUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WOTPlusUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -4,23 +4,23 @@ project 'WOTPlus.xcodeproj'
 # platform :ios, '9.0'
 
 target 'WOTPlus' do
-  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+ pod 'AFNetworking'
+pod 'Masonry'
+pod 'YYKit'
+pod 'MMDrawerController'
+pod 'SVProgressHUD'
+
+ # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
   # Pods for WOTPlus
 
   target 'WOTPlusTests' do
-pod 'SVProgressHUD'
-pod 'AFNetworking'
-pod 'Masonry'
-pod 'YYModel'
-pod 'CYLTabBarController'
-
 
   end
 
   target 'WOTPlusUITests' do
-    inherit! :search_paths
+
     # Pods for testing
   end
 

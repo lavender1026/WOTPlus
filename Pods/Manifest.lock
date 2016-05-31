@@ -14,25 +14,38 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CYLTabBarController (1.4.1)
   - Masonry (1.0.0)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
   - SVProgressHUD (2.0.3)
-  - YYModel (1.0.3)
+  - YYKit (1.0.5):
+    - YYKit/no-arc (= 1.0.5)
+  - YYKit/no-arc (1.0.5)
 
 DEPENDENCIES:
   - AFNetworking
-  - CYLTabBarController
   - Masonry
+  - MMDrawerController
   - SVProgressHUD
-  - YYModel
+  - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CYLTabBarController: dbe19e17903b2343c0511263d8f5ccc4a83aa5fc
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
-  YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
+  YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-PODFILE CHECKSUM: 5e19f895b83328b82dac4a4d5467f55040ded436
+PODFILE CHECKSUM: 3acf201ea2d066f30df9e4508d7a3cde1e4fc4dc
 
 COCOAPODS: 1.0.0

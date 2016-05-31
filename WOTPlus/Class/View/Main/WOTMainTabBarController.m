@@ -19,7 +19,8 @@
 #import "WOTTieBarViewController.h"
 //Setting
 #import "WOTSettingTableViewController.h"
-
+#import <MMDrawerController.h>
+#import "WOTPersonTableViewController.h"
 
 @interface WOTMainTabBarController ()
 
@@ -41,8 +42,15 @@
 {
     //    alloc init
     WOTHomeTableViewController *homeVc   = [[WOTHomeTableViewController alloc]init];
-    WOTHomeNavController *homeNav        = [[WOTHomeNavController alloc]initWithRootViewController:homeVc];
-
+//    WOTHomeNavController *homeNav        = [[WOTHomeNavController alloc]initWithRootViewController:homeVc];
+    WOTPersonTableViewController *personVc = [[WOTPersonTableViewController alloc]init];
+//    UIViewController * leftDrawer = [[UIViewController alloc] init];
+//    
+//    UIViewController * center = [[UIViewController alloc] init];
+//    UIViewController * rightDrawer = [[UIViewController alloc] init];
+    
+    MMDrawerController * drawerController = [[MMDrawerController alloc]
+                                             initWithCenterViewController:homeVc leftDrawerViewController:personVc];
     WOTGuideViewController *guideVc      = [[WOTGuideViewController alloc]init];
 
     WOTVideoViewController *videoVc      = [[WOTVideoViewController alloc]init];
@@ -53,8 +61,12 @@
    
 
 // 赋值
-    [self addChildViewController:homeNav title:@"首页" imageName:@"tabbar_home"];
+    [self addChildViewController:drawerController title:@"首页" imageName:@"tabbar_home"];
 
+    
+    
+    
+    
     [self addChildViewController:guideVc title:@"攻略" imageName:@"tabbar_discover"];
     
     [self addChildViewController:videoVc title:@"视频" imageName:@"tabbar_home"];
@@ -67,8 +79,11 @@
 }
 
 
+
 - (void)addChildViewController: (UIViewController *)childController title: (NSString *)title imageName: (NSString *)imageName
 {
+    
+   
     [childController.tabBarItem setImage:[UIImage imageNamed:imageName]];
     NSString *selectedImageName = [imageName stringByAppendingString:@"_highlighted"];
     [childController.tabBarItem setSelectedImage:[UIImage imageNamed:selectedImageName]];

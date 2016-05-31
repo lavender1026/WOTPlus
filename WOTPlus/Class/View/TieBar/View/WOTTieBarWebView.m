@@ -7,6 +7,11 @@
 //
 
 #import "WOTTieBarWebView.h"
+#import <SVProgressHUD.h>
+
+@interface WOTTieBarWebView ()<UIWebViewDelegate>
+
+@end
 
 @implementation WOTTieBarWebView
 
@@ -15,7 +20,16 @@
 - (void)setWebUrlString:(NSString *)webUrlString {
     _webUrlString = webUrlString;
     NSURLRequest* webReq = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString:webUrlString]];
+    self.delegate = self;
     [self loadRequest:webReq];
 }
-
+//MARK:- Delegate
+-(void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [SVProgressHUD show];
+}
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [SVProgressHUD dismiss];
+}
 @end
