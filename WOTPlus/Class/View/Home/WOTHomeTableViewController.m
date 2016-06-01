@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
+//    self.view.backgroundColor = WOTRGBColor(65, 80, 105);
+    self.view.backgroundColor = [UIColor colorWithRed:65/255.0 green:80/255.0 blue:105/255.0 alpha:1.0];
 }
 
 - (void)didReceiveMemoryWarning {

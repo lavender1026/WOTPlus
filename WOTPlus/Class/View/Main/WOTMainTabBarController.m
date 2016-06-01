@@ -19,7 +19,6 @@
 //Setting
 #import "WOTSettingTableViewController.h"
 #import <MMDrawerController.h>
-
 @interface WOTMainTabBarController ()
 
 @end
@@ -29,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupChildControllers];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = randomColor;
+    self.view.backgroundColor = WOTRGBColor(65, 80, 105);
 }
 
 - (void)didReceiveMemoryWarning {

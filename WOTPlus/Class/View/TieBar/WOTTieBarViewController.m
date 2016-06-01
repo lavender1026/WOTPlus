@@ -20,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = WOTRGBColor(65, 80, 105);
+
     self.webView.webUrlString = @"http://tieba.baidu.com/f?kw=%CC%B9%BF%CB%CA%C0%BD%E7&fr=ala0&tpl=5";
 //    self.webView.delegate = self;
     [self.view addSubview:self.webView];

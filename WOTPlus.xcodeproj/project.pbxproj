@@ -19,7 +19,6 @@
 		842EF3581CF97CCA001B775E /* WOTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF34F1CF97CCA001B775E /* WOTVideoViewController.m */; };
 		843E86C01CFE870400EC36C4 /* WOTSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E86BF1CFE870400EC36C4 /* WOTSettingTableViewCell.m */; };
 		843E86C31CFE918A00EC36C4 /* WOTPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E86C21CFE918A00EC36C4 /* WOTPersonTableViewCell.m */; };
-		843E86C61CFE946600EC36C4 /* WOTPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E86C51CFE946600EC36C4 /* WOTPersonViewController.m */; };
 		84B9D5CC1CF3F670006FC03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D5CB1CF3F670006FC03C /* main.m */; };
 		84B9D5D71CF3F670006FC03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B9D5D61CF3F670006FC03C /* Assets.xcassets */; };
 		84B9D5DA1CF3F670006FC03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B9D5D81CF3F670006FC03C /* LaunchScreen.storyboard */; };
@@ -76,8 +75,6 @@
 		843E86BF1CFE870400EC36C4 /* WOTSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTSettingTableViewCell.m; sourceTree = "<group>"; };
 		843E86C11CFE918A00EC36C4 /* WOTPersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTPersonTableViewCell.h; sourceTree = "<group>"; };
 		843E86C21CFE918A00EC36C4 /* WOTPersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTPersonTableViewCell.m; sourceTree = "<group>"; };
-		843E86C41CFE946600EC36C4 /* WOTPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTPersonViewController.h; sourceTree = "<group>"; };
-		843E86C51CFE946600EC36C4 /* WOTPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTPersonViewController.m; sourceTree = "<group>"; };
 		844A6AC31CFDABD8009D3008 /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = "Pods/../build/Debug-iphoneos/SVProgressHUD/libSVProgressHUD.a"; sourceTree = "<group>"; };
 		84559A671CF57BF2008C591B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		84B9D5C71CF3F670006FC03C /* WOTPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOTPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,8 +229,6 @@
 		842EF3441CF97CCA001B775E /* Person */ = {
 			isa = PBXGroup;
 			children = (
-				843E86C41CFE946600EC36C4 /* WOTPersonViewController.h */,
-				843E86C51CFE946600EC36C4 /* WOTPersonViewController.m */,
 				842EF3451CF97CCA001B775E /* WOTPersonTableViewController.h */,
 				842EF3461CF97CCA001B775E /* WOTPersonTableViewController.m */,
 				843E86C11CFE918A00EC36C4 /* WOTPersonTableViewCell.h */,
@@ -627,7 +622,6 @@
 				842EF3551CF97CCA001B775E /* WOTPersonTableViewController.m in Sources */,
 				842EF3561CF97CCA001B775E /* WOTSettingTableViewController.m in Sources */,
 				843E86C31CFE918A00EC36C4 /* WOTPersonTableViewCell.m in Sources */,
-				843E86C61CFE946600EC36C4 /* WOTPersonViewController.m in Sources */,
 				84F12D5A1CF9B20C0049FC58 /* WOTTieBarWebView.m in Sources */,
 				842EF3581CF97CCA001B775E /* WOTVideoViewController.m in Sources */,
 				842EF3571CF97CCA001B775E /* WOTTieBarViewController.m in Sources */,
