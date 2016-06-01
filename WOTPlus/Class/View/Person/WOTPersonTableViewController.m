@@ -20,6 +20,7 @@
   
     self.view.backgroundColor =[UIColor colorWithRed:65/255.0 green:80/255.0 blue:105/255.0 alpha:1.0];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.bounces = NO;
 }
 
 - (void)didReceiveMemoryWarning {

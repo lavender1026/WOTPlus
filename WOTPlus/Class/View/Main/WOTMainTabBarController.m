@@ -19,6 +19,7 @@
 //Setting
 #import "WOTSettingTableViewController.h"
 #import <MMDrawerController.h>
+#import "WOTVisitorLoginViewController.h"
 @interface WOTMainTabBarController ()
 
 @end
@@ -40,7 +41,8 @@
 {
     //    alloc init
     WOTHomeTableViewController *homeVc   = [[WOTHomeTableViewController alloc]init];
-
+    WOTVisitorLoginViewController *visitorVc = [[WOTVisitorLoginViewController alloc]init];
+    
     WOTGuideViewController *guideVc      = [[WOTGuideViewController alloc]init];
 
     WOTVideoViewController *videoVc      = [[WOTVideoViewController alloc]init];
@@ -51,7 +53,7 @@
    
 
 // 赋值
-    [self addChildViewController:homeVc title:@"首页" imageName:@"tabbar_home"];
+    [self addChildViewController:visitorVc title:@"首页" imageName:@"tabbar_home"];
 
     [self addChildViewController:guideVc title:@"攻略" imageName:@"tabbar_discover"];
     
@@ -79,6 +81,9 @@
     [self addChildViewController:nav];
     
 }
-
+-(bool)prefersStatusBarHidden
+{
+    return  YES;
+}
 
 @end
