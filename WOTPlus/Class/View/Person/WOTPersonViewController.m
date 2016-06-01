@@ -1,30 +1,22 @@
 //
-//  WOTHomeNavController.m
+//  WOTPersonViewController.m
 //  WOTPlus
 //
-//  Created by admin on 16/5/26.
+//  Created by admin on 16/6/1.
 //  Copyright © 2016年 DirkChen. All rights reserved.
 //
 
-#import "WOTHomeNavController.h"
+#import "WOTPersonViewController.h"
 
-@interface WOTHomeNavController ()
+@interface WOTPersonViewController ()
 
 @end
 
-@implementation WOTHomeNavController
+@implementation WOTPersonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-
-    
-//    self.window.rootViewController = sideMenu;
-//    [self.window makeKeyAndVisible ];
-
-
-
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

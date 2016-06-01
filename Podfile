@@ -9,7 +9,7 @@ pod 'Masonry'
 pod 'YYKit'
 pod 'MMDrawerController'
 pod 'SVProgressHUD'
-
+pod 'PNChart'
  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 

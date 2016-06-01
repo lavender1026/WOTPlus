@@ -9,6 +9,7 @@
 
 #import "WOTTieBarViewController.h"
 #import "WOTTieBarWebView.h"
+#import "SVProgressHUD.h"
 
 
 @interface WOTTieBarViewController ()
@@ -24,7 +25,10 @@
     [self.view addSubview:self.webView];
 }
 //MARK:-懒加载
-
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [SVProgressHUD dismiss];
+}
 
 - (WOTTieBarWebView *)webView {
     if (!_webView) {

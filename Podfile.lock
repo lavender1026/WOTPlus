@@ -27,7 +27,10 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.6.0):
     - MMDrawerController/Core
+  - PNChart (0.8.8):
+    - UICountingLabel (~> 1.2.0)
   - SVProgressHUD (2.0.3)
+  - UICountingLabel (1.2.0)
   - YYKit (1.0.5):
     - YYKit/no-arc (= 1.0.5)
   - YYKit/no-arc (1.0.5)
@@ -36,6 +39,7 @@ DEPENDENCIES:
   - AFNetworking
   - Masonry
   - MMDrawerController
+  - PNChart
   - SVProgressHUD
   - YYKit
 
@@ -43,9 +47,11 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  PNChart: 25f91e9c4688af49c3647489760624d037f5383f
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-PODFILE CHECKSUM: 3acf201ea2d066f30df9e4508d7a3cde1e4fc4dc
+PODFILE CHECKSUM: dda75b3fe27eb4cc21bc50558a8c92412f7d29dd
 
 COCOAPODS: 1.0.0

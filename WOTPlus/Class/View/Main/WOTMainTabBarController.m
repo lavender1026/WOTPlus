@@ -9,7 +9,6 @@
 #import "WOTMainTabBarController.h"
 //HOME
 #import "WOTHomeTableViewController.h"
-#import "WOTHomeNavController.h"
 //Guide
 #import "WOTGuideViewController.h"
 //Video
@@ -20,7 +19,6 @@
 //Setting
 #import "WOTSettingTableViewController.h"
 #import <MMDrawerController.h>
-#import "WOTPersonTableViewController.h"
 
 @interface WOTMainTabBarController ()
 
@@ -42,31 +40,19 @@
 {
     //    alloc init
     WOTHomeTableViewController *homeVc   = [[WOTHomeTableViewController alloc]init];
-//    WOTHomeNavController *homeNav        = [[WOTHomeNavController alloc]initWithRootViewController:homeVc];
-    WOTPersonTableViewController *personVc = [[WOTPersonTableViewController alloc]init];
-//    UIViewController * leftDrawer = [[UIViewController alloc] init];
-//    
-//    UIViewController * center = [[UIViewController alloc] init];
-//    UIViewController * rightDrawer = [[UIViewController alloc] init];
-    
-    MMDrawerController * drawerController = [[MMDrawerController alloc]
-                                             initWithCenterViewController:homeVc leftDrawerViewController:personVc];
+
     WOTGuideViewController *guideVc      = [[WOTGuideViewController alloc]init];
 
     WOTVideoViewController *videoVc      = [[WOTVideoViewController alloc]init];
     
     WOTTieBarViewController *tieBarVc    = [[WOTTieBarViewController alloc]init];
 
-    WOTSettingTableViewController *setVc = [[WOTSettingTableViewController alloc]init];
+    WOTSettingTableViewController *setVc = [[WOTSettingTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
    
 
 // 赋值
-    [self addChildViewController:drawerController title:@"首页" imageName:@"tabbar_home"];
+    [self addChildViewController:homeVc title:@"首页" imageName:@"tabbar_home"];
 
-    
-    
-    
-    
     [self addChildViewController:guideVc title:@"攻略" imageName:@"tabbar_discover"];
     
     [self addChildViewController:videoVc title:@"视频" imageName:@"tabbar_home"];

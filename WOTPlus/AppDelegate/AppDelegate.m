@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "MMDrawerController.h"
+#import "WOTPersonTableViewController.h"
+#import "WOTHomeTableViewController.h"
 #import "WOTMainTabBarController.h"
-
 @interface AppDelegate ()
 
 @end
@@ -18,11 +20,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+//    UITableViewController *homeTabC = [[WOTHomeTableViewController alloc]init];
+//    UINavigationController *homeNavC = [[UINavigationController alloc]initWithRootViewController:homeTabC];
     WOTMainTabBarController *tabBar = [[WOTMainTabBarController alloc]init];
+    
+    UITableViewController *personTabC = [[WOTPersonTableViewController alloc]init];
+    UINavigationController *personNavC = [[UINavigationController alloc]initWithRootViewController:personTabC];
+    MMDrawerController *DrawerController = [[MMDrawerController alloc]initWithCenterViewController:tabBar leftDrawerViewController:personNavC];
+    [DrawerController setMaximumLeftDrawerWidth:150.0];
+    [DrawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [DrawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    self.window.rootViewController = DrawerController;
+    
+//    UINavigationController *personNavC = [UINavigationController alloc]
+
     //    [[UIApplication sharedApplication].keyWindow setRootViewController:tabBar];
     //    [self.window setRootViewController:[[WOTMainTabBarController alloc]init]];
-    self.window.rootViewController =tabBar;
+//    self.window.rootViewController =tabBar;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

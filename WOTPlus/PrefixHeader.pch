@@ -8,7 +8,7 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-
+#import <YYKit.h>
 // 自定义输入日志 Log
 #ifdef DEBUG
 #define NSLOG(...) NSLog(__VA_ARGS__);
@@ -16,6 +16,7 @@
 #else
 #define NSLOG(...); #define LOG_METHOD;
 #endif
+static NSString *identify = @"wot";
 
 #define randomColor  [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
 
