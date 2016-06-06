@@ -46,8 +46,10 @@
     self.view.backgroundColor = WOTRGBColor(237, 237, 237);
     [self setupUI];
     [self setuplayout];
+    [self startAnimation];
+    [self addTargets];
 }
-
+//MARK:-setupUI
 - (void)setupUI
 {
     self.backIcon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"visitordiscover_feed_mask_smallicon"]];
@@ -80,15 +82,17 @@
     [self.southBtn setBackgroundImage:[UIImage imageNamed:@"Slice 1"] forState:UIControlStateSelected];
     [self.loginBtn setBackgroundImage:[UIImage imageNamed:@"Slice 1"] forState:UIControlStateSelected];
     
-    [self.view addSubview:self.backIcon];
     [self.view addSubview:self.circleIcon];
     [self.view addSubview:self.homeIcon];
+    [self.view addSubview:self.backIcon];
+
     [self.view addSubview:self.northBtn];
     [self.view addSubview:self.southBtn];
     [self.view addSubview:self.loginBtn];
     [self.view addSubview:self.tipLabel];
 }
 
+//MARK:-setuplayout
 
 - (void)setuplayout
 {
@@ -128,39 +132,43 @@
         make.top.equalTo(self.northBtn.mas_bottom).offset(16);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-    
-    
-    
-    
-    
-    
-    
- 
-    
- 
-    
-//    //        add target
-//    loginBtn.addTarget(self, action: #selector(DCVisitorLoginView.loginBtnClick), forControlEvents: .TouchUpInside)
-//    registerBtn.addTarget(self, action: #selector(DCVisitorLoginView.registerBtnClick), forControlEvents: .TouchUpInside)
+   
+}
+//MARK:- Animation
+- (void)startAnimation
+{
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    animation.duration = 9;
+    animation.repeatCount = MAXFLOAT;
+    animation.toValue = @(2.0*M_PI);
+    animation.removedOnCompletion = false;
+    [self.circleIcon.layer addAnimation:animation forKey:nil];
+}
+//MARK:-add targets
+- (void)addTargets
+{
+    [self.southBtn addTarget:self action:@selector(southBtnDidClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.northBtn addTarget:self action:@selector(northBtnDidClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.loginBtn addTarget:self action:@selector(loginBtnDidClick) forControlEvents:UIControlEventTouchUpInside];
     
     
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)southBtnDidClick
+{
+    NSLog(@"南区");
+    
 }
-
-
-
-
-
+- (void)northBtnDidClick
+{
+    NSLog(@"北区");
+}
+- (void)loginBtnDidClick
+{
+    NSLog(@"登陆");
+}
 
 //MARK:-懒加载
-
-
-
 - (UIImageView* )backIcon
 {
     if (!_backIcon) {
