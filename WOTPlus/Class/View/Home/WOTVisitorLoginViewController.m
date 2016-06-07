@@ -37,9 +37,15 @@
  *  tipLabel
  */
 @property (nonatomic, strong) UILabel *tipLabel;
+/**
+ *  textField
+ */
+@property (nonatomic, strong) UITextField *textField;
 @end
 
 @implementation WOTVisitorLoginViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -82,14 +88,30 @@
     [self.southBtn setBackgroundImage:[UIImage imageNamed:@"Slice 1"] forState:UIControlStateSelected];
     [self.loginBtn setBackgroundImage:[UIImage imageNamed:@"Slice 1"] forState:UIControlStateSelected];
     
+    
+    [self.textField setPlaceholder:@"请输入游戏昵称"];
+    [self.textField setTintColor:[UIColor redColor]];
+    [self.textField setTextColor:[UIColor redColor]];
+//    UITextBorderStyleNone,
+//    UITextBorderStyleLine,
+//    UITextBorderStyleBezel,
+//    UITextBorderStyleRoundedRect
+    self.textField.leftView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"tabbar_profile"]];
+    self.textField.leftViewMode = UITextFieldViewModeAlways;
+    self.textField.borderStyle = UITextBorderStyleRoundedRect;
+    self.textField.font = [UIFont systemFontOfSize:12];
+    
+    
+    
     [self.view addSubview:self.circleIcon];
     [self.view addSubview:self.homeIcon];
     [self.view addSubview:self.backIcon];
-
+[self.view addSubview:self.tipLabel];
     [self.view addSubview:self.northBtn];
     [self.view addSubview:self.southBtn];
+    [self.view addSubview:self.textField];
     [self.view addSubview:self.loginBtn];
-    [self.view addSubview:self.tipLabel];
+    
 }
 
 //MARK:-setuplayout
@@ -127,13 +149,21 @@
         make.top.equalTo(self.tipLabel.mas_bottom).offset(16);
         make.width.mas_equalTo(100);
     }];
-    [self.loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.tipLabel.mas_right);
+    [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view.mas_centerX);
         make.top.equalTo(self.northBtn.mas_bottom).offset(16);
+        make.width.mas_equalTo(200);
+    }];
+    [self.loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.tipLabel.mas_right).offset(-50);
+        make.top.equalTo(self.textField.mas_bottom).offset(16);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
    
 }
+
+
+
 //MARK:- Animation
 - (void)startAnimation
 {
@@ -166,6 +196,7 @@
 - (void)loginBtnDidClick
 {
     NSLog(@"登陆");
+//    发送网络请求 获取南区北区 账号昵称至网络 发送成功则跳转push页面到个人信息
 }
 
 //MARK:-懒加载
@@ -219,5 +250,12 @@
         _tipLabel = [[UILabel alloc]init];
     }
     return _tipLabel;
+}
+- (UITextField* )textField
+{
+    if (!_textField) {
+        _textField = [[UITextField alloc]init];
+    }
+    return _textField;
 }
 @end

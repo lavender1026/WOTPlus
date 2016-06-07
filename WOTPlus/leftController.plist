@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Header</key>
+		<string></string>
+		<key>Footer</key>
+		<string></string>
+		<key>Items</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>登陆</string>
+				<key>AccessoryType</key>
+				<string>UIImageView</string>
+				<key>AccessoryImageName</key>
+				<string>tabbar_home</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>战车</string>
+				<key>AccessoryType</key>
+				<string>UIImageView</string>
+				<key>AccessoryImageName</key>
+				<string>tabbar_message_center</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>成就</string>
+				<key>AccessoryType</key>
+				<string>UIImageView</string>
+				<key>AccessoryImageName</key>
+				<string>tabbar_discover</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>退出</string>
+				<key>AccessoryType</key>
+				<string>UIImageView</string>
+				<key>AccessoryImageName</key>
+				<string>tabbar_profile</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

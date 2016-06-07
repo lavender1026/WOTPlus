@@ -18,7 +18,6 @@
 #import "WOTTieBarViewController.h"
 //Setting
 #import "WOTSettingTableViewController.h"
-#import <MMDrawerController.h>
 #import "WOTVisitorLoginViewController.h"
 @interface WOTMainTabBarController ()
 
@@ -40,7 +39,6 @@
 - (void)setupChildControllers
 {
     //    alloc init
-    WOTHomeTableViewController *homeVc   = [[WOTHomeTableViewController alloc]init];
     WOTVisitorLoginViewController *visitorVc = [[WOTVisitorLoginViewController alloc]init];
     
     WOTGuideViewController *guideVc      = [[WOTGuideViewController alloc]init];

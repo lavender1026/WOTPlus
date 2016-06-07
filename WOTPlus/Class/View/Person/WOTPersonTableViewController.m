@@ -7,7 +7,6 @@
 //
 
 #import "WOTPersonTableViewController.h"
-#import "WOTPersonTableViewCell.h"
 
 @interface WOTPersonTableViewController ()
 
@@ -41,9 +40,9 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    WOTPersonTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:identify];
+    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:identify];
     if (!cell) {
-        cell =[[WOTPersonTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
+        cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
     }
     return  cell;
 }

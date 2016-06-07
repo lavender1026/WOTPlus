@@ -11,6 +11,7 @@
 #import "WOTPersonTableViewController.h"
 #import "WOTHomeTableViewController.h"
 #import "WOTMainTabBarController.h"
+#import "WOTPersonViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -23,7 +24,7 @@
     
 
     WOTMainTabBarController *tabBar = [[WOTMainTabBarController alloc]init];
-    UITableViewController *personTabC = [[WOTPersonTableViewController alloc]init];
+    UIViewController *personTabC = [[WOTPersonViewController alloc]init];
     UINavigationController *personNavC = [[UINavigationController alloc]initWithRootViewController:personTabC];
     
     MMDrawerController *DrawerController = [[MMDrawerController alloc]initWithCenterViewController:tabBar leftDrawerViewController:personNavC];
