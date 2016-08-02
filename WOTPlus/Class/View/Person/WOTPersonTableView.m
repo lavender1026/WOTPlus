@@ -9,7 +9,7 @@
 #import "WOTPersonTableView.h"
 
 @interface WOTPersonTableView ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, strong) NSArray *groupsArr;
+@property (nonatomic, strong) NSArray *personArr;
 @end
 @implementation WOTPersonTableView
 -(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style
@@ -24,29 +24,29 @@
     }
     return self;
 }
--(NSArray *)groupsArr{
+-(NSArray *)personArr{
     
     NSString *path = [[NSBundle mainBundle]pathForResource:@"leftController" ofType:@"plist"];
     NSLog(@"%@", path);
     
     
-    if (_groupsArr == nil) {
+    if (_personArr == nil) {
    
-            _groupsArr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"leftController" ofType:@"plist"]];
+            _personArr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"leftController" ofType:@"plist"]];
 
     }
-    return _groupsArr;
+    return _personArr;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 
 {
-    NSDictionary *dict = self.groupsArr[section];
+    NSDictionary *dict = self.personArr[section];
     return [dict[@"Items"] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    NSDictionary *dict = self.groupsArr[indexPath.section];
+    NSDictionary *dict = self.personArr[indexPath.section];
     NSArray *arr = dict[@"Items"];
     NSDictionary *dictItem = arr[indexPath.row];
     
@@ -71,8 +71,6 @@
     }
     cell.textLabel.text = dictItem[@"Title"];
     cell.textLabel.numberOfLines = 0;
-    
-    
     return cell;
 }
 @end

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   setting.plist
-   WOTPlus
-
-   Created by admin on 16/7/27.
-   Copyright (c) 2016年 DirkChen. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<dict>
+		<key>Title</key>
+		<string>清除缓存</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>评分支持</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>意见反馈</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>关于作者</string>
+	</dict>
+</array>
 </plist>

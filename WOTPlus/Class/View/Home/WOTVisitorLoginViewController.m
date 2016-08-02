@@ -64,7 +64,7 @@
     self.homeIcon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"visitordiscover_feed_image_house"]];
 
     
-    self.tipLabel.text = @"登录即可查看战斗战绩与你的坦克哦";
+    self.tipLabel.text = @"登录即可查看战斗战绩与你的坦克";
     self.tipLabel.font = [UIFont systemFontOfSize:14];
     self.tipLabel.tintColor = [UIColor purpleColor];
     [self.tipLabel sizeToFit];
@@ -75,7 +75,7 @@
     [self.northBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.southBtn setTitle:@"南区" forState:UIControlStateNormal];
     [self.southBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.loginBtn setTitle:@"登录" forState:UIControlStateNormal];
+    [self.loginBtn setTitle:@"登陆" forState:UIControlStateNormal];
     [self.loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
     [self.northBtn setBackgroundImage:[UIImage imageNamed:@"common_button_white_disable"] forState:UIControlStateNormal];

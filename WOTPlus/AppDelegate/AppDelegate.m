@@ -12,6 +12,8 @@
 #import "WOTHomeTableViewController.h"
 #import "WOTMainTabBarController.h"
 #import "WOTPersonViewController.h"
+#import "WOTNewFeatureCollectionViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,27 +23,54 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
-
-    WOTMainTabBarController *tabBar = [[WOTMainTabBarController alloc]init];
-    UIViewController *personTabC = [[WOTPersonViewController alloc]init];
-    UINavigationController *personNavC = [[UINavigationController alloc]initWithRootViewController:personTabC];
-    
-    MMDrawerController *DrawerController = [[MMDrawerController alloc]initWithCenterViewController:tabBar leftDrawerViewController:personNavC];
-    
-    [DrawerController setMaximumLeftDrawerWidth:150.0];
-    [DrawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [DrawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-    self.window.rootViewController = DrawerController;
-    
-    self.window.backgroundColor = [UIColor whiteColor];
-    
+    self.window.backgroundColor = [UIColor clearColor];
+    [self setRootVC];
+    self.window.rootViewController = [self setupNewFeature];
     [self.window makeKeyAndVisible];
     
     return YES;
 }
 
 
+
+- (void)setRootVC
+{
+    if ([[NSBundle mainBundle].infoDictionary[@"CFBundleVersion"] isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:@"CFBundleVersion"]]) {
+        WOTMainTabBarController *tabBar = [[WOTMainTabBarController alloc]init];
+        UIViewController *personTabC = [[WOTPersonViewController alloc]init];
+        UINavigationController *personNavC = [[UINavigationController alloc]initWithRootViewController:personTabC];
+        
+        MMDrawerController *DrawerController = [[MMDrawerController alloc]initWithCenterViewController:tabBar leftDrawerViewController:personNavC];
+        
+        [DrawerController setMaximumLeftDrawerWidth:150.0];
+        [DrawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+        [DrawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+        self.window.rootViewController = DrawerController;
+        
+    }
+    else
+    {
+        self.window.rootViewController = [self setupNewFeature];
+
+    }
+    
+
+}
+
+- (WOTNewFeatureCollectionViewController *)setupNewFeature
+{
+    WOTNewFeatureCollectionViewController *newFeatureVC = [[WOTNewFeatureCollectionViewController alloc]init];
+    NSMutableArray *MovieArr = [NSMutableArray array];
+    for (int i = 0; i<4; i++) {
+        [MovieArr addObject:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"guide%zd",i] ofType:@".mp4"]];
+    }
+    newFeatureVC.guideMoviePathArr = MovieArr;
+    NSMutableArray *ImageArr = [NSMutableArray arrayWithObjects:@"guide0",@"guide01",@"guide02",@"guide03", nil];
+    
+    newFeatureVC.guideImagesArr = ImageArr;
+    
+    return newFeatureVC;
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

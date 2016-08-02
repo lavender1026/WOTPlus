@@ -13,7 +13,6 @@
 		8415B5D51D05B59A00FBA8E7 /* WOTPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8415B5D41D05B59A00FBA8E7 /* WOTPersonViewController.m */; };
 		8415B5D81D05B79900FBA8E7 /* WOTPersonTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8415B5D71D05B79900FBA8E7 /* WOTPersonTableView.m */; };
 		8415B5DA1D05B9DA00FBA8E7 /* leftController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8415B5D91D05B9DA00FBA8E7 /* leftController.plist */; };
-		842EF3511CF97CCA001B775E /* WOTGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF33B1CF97CCA001B775E /* WOTGuideViewController.m */; };
 		842EF3531CF97CCA001B775E /* WOTHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF3401CF97CCA001B775E /* WOTHomeTableViewController.m */; };
 		842EF3541CF97CCA001B775E /* WOTMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF3431CF97CCA001B775E /* WOTMainTabBarController.m */; };
 		842EF3551CF97CCA001B775E /* WOTPersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EF3461CF97CCA001B775E /* WOTPersonTableViewController.m */; };
@@ -26,9 +25,18 @@
 		84B9D5DA1CF3F670006FC03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B9D5D81CF3F670006FC03C /* LaunchScreen.storyboard */; };
 		84B9D5E51CF3F670006FC03C /* WOTPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D5E41CF3F670006FC03C /* WOTPlusTests.m */; };
 		84B9D5F01CF3F670006FC03C /* WOTPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D5EF1CF3F670006FC03C /* WOTPlusUITests.m */; };
+		84E368B71D48AA42005C4A59 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84E368B61D48AA42005C4A59 /* setting.plist */; };
 		84E50E351CFF032800CA2525 /* WOTVisitorLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E50E341CFF032800CA2525 /* WOTVisitorLoginViewController.m */; };
 		84F12D531CF9A2D40049FC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F12D521CF9A2D40049FC58 /* AppDelegate.m */; };
 		84F12D5A1CF9B20C0049FC58 /* WOTTieBarWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F12D591CF9B20C0049FC58 /* WOTTieBarWebView.m */; };
+		84F255941D50995900348C53 /* guide0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84F255901D50995900348C53 /* guide0.mp4 */; };
+		84F255951D50995900348C53 /* guide1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84F255911D50995900348C53 /* guide1.mp4 */; };
+		84F255961D50995900348C53 /* guide2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84F255921D50995900348C53 /* guide2.mp4 */; };
+		84F255971D50995900348C53 /* guide3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84F255931D50995900348C53 /* guide3.mp4 */; };
+		84F2559A1D50AB5E00348C53 /* WOTNewFeatureCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F255991D50AB5E00348C53 /* WOTNewFeatureCollectionViewController.m */; };
+		84F255A01D50EF3100348C53 /* WOTFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2559F1D50EF3100348C53 /* WOTFlowLayout.m */; };
+		84F255A41D50EFE500348C53 /* WOTNewFeatureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F255A31D50EFE500348C53 /* WOTNewFeatureCollectionViewCell.m */; };
+		84F255A81D50F63200348C53 /* WOTGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F255A71D50F63200348C53 /* WOTGuideViewController.m */; };
 		EFCFB46B2443CC7D732C3CF2 /* libPods-WOTPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1628BE1384F2FD4DE008AE2E /* libPods-WOTPlusTests.a */; };
 		FE0E0E9B0DD31BB63027D848 /* libPods-WOTPlusUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0E21BB8972CF2DD67D1016 /* libPods-WOTPlusUITests.a */; };
 /* End PBXBuildFile section */
@@ -64,9 +72,7 @@
 		8415B5D41D05B59A00FBA8E7 /* WOTPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTPersonViewController.m; sourceTree = "<group>"; };
 		8415B5D61D05B79900FBA8E7 /* WOTPersonTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTPersonTableView.h; sourceTree = "<group>"; };
 		8415B5D71D05B79900FBA8E7 /* WOTPersonTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTPersonTableView.m; sourceTree = "<group>"; };
-		8415B5D91D05B9DA00FBA8E7 /* leftController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = leftController.plist; sourceTree = "<group>"; };
-		842EF33A1CF97CCA001B775E /* WOTGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTGuideViewController.h; sourceTree = "<group>"; };
-		842EF33B1CF97CCA001B775E /* WOTGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTGuideViewController.m; sourceTree = "<group>"; };
+		8415B5D91D05B9DA00FBA8E7 /* leftController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = leftController.plist; path = ../../../leftController.plist; sourceTree = "<group>"; };
 		842EF33F1CF97CCA001B775E /* WOTHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTHomeTableViewController.h; sourceTree = "<group>"; };
 		842EF3401CF97CCA001B775E /* WOTHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTHomeTableViewController.m; sourceTree = "<group>"; };
 		842EF3421CF97CCA001B775E /* WOTMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTMainTabBarController.h; sourceTree = "<group>"; };
@@ -94,12 +100,25 @@
 		84B9D5EB1CF3F670006FC03C /* WOTPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WOTPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B9D5EF1CF3F670006FC03C /* WOTPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WOTPlusUITests.m; sourceTree = "<group>"; };
 		84B9D5F11CF3F670006FC03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E368B61D48AA42005C4A59 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
 		84E50E331CFF032800CA2525 /* WOTVisitorLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTVisitorLoginViewController.h; sourceTree = "<group>"; };
 		84E50E341CFF032800CA2525 /* WOTVisitorLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTVisitorLoginViewController.m; sourceTree = "<group>"; };
 		84F12D511CF9A2D40049FC58 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
 		84F12D521CF9A2D40049FC58 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
 		84F12D581CF9B20C0049FC58 /* WOTTieBarWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTTieBarWebView.h; sourceTree = "<group>"; };
 		84F12D591CF9B20C0049FC58 /* WOTTieBarWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTTieBarWebView.m; sourceTree = "<group>"; };
+		84F255901D50995900348C53 /* guide0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide0.mp4; sourceTree = "<group>"; };
+		84F255911D50995900348C53 /* guide1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide1.mp4; sourceTree = "<group>"; };
+		84F255921D50995900348C53 /* guide2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide2.mp4; sourceTree = "<group>"; };
+		84F255931D50995900348C53 /* guide3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide3.mp4; sourceTree = "<group>"; };
+		84F255981D50AB5E00348C53 /* WOTNewFeatureCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOTNewFeatureCollectionViewController.h; path = WOTPlus/Class/View/NewFeature/WOTNewFeatureCollectionViewController.h; sourceTree = SOURCE_ROOT; };
+		84F255991D50AB5E00348C53 /* WOTNewFeatureCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOTNewFeatureCollectionViewController.m; path = WOTPlus/Class/View/NewFeature/WOTNewFeatureCollectionViewController.m; sourceTree = SOURCE_ROOT; };
+		84F2559E1D50EF3100348C53 /* WOTFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOTFlowLayout.h; path = WOTPlus/Class/View/NewFeature/WOTFlowLayout.h; sourceTree = SOURCE_ROOT; };
+		84F2559F1D50EF3100348C53 /* WOTFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOTFlowLayout.m; path = WOTPlus/Class/View/NewFeature/WOTFlowLayout.m; sourceTree = SOURCE_ROOT; };
+		84F255A21D50EFE500348C53 /* WOTNewFeatureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOTNewFeatureCollectionViewCell.h; path = WOTPlus/Class/View/NewFeature/WOTNewFeatureCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		84F255A31D50EFE500348C53 /* WOTNewFeatureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOTNewFeatureCollectionViewCell.m; path = WOTPlus/Class/View/NewFeature/WOTNewFeatureCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
+		84F255A61D50F63200348C53 /* WOTGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOTGuideViewController.h; sourceTree = "<group>"; };
+		84F255A71D50F63200348C53 /* WOTGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOTGuideViewController.m; sourceTree = "<group>"; };
 		8746FE99287D709D2D95F2AA /* Pods-WOTPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlusUITests/Pods-WOTPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9F84ED965828F4539BFD957D /* Pods-WOTPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlusTests/Pods-WOTPlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5D5E4EC67F335103451FB87 /* Pods-WOTPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOTPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOTPlus/Pods-WOTPlus.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,10 +197,10 @@
 		8415B5CF1D05B4CA00FBA8E7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				842EF3451CF97CCA001B775E /* WOTPersonTableViewController.h */,
-				842EF3461CF97CCA001B775E /* WOTPersonTableViewController.m */,
 				8415B5D31D05B59A00FBA8E7 /* WOTPersonViewController.h */,
 				8415B5D41D05B59A00FBA8E7 /* WOTPersonViewController.m */,
+				842EF3451CF97CCA001B775E /* WOTPersonTableViewController.h */,
+				842EF3461CF97CCA001B775E /* WOTPersonTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -198,6 +217,7 @@
 		8415B5D21D05B51D00FBA8E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8415B5D91D05B9DA00FBA8E7 /* leftController.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -205,10 +225,10 @@
 		842EF3351CF97CCA001B775E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				84F2558F1D50995900348C53 /* Resource */,
 				842EF3361CF97CCA001B775E /* Model */,
 				842EF3371CF97CCA001B775E /* Tools */,
 				842EF3381CF97CCA001B775E /* View */,
-				842EF3501CF97CCA001B775E /* ViewModel */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -231,9 +251,10 @@
 			isa = PBXGroup;
 			children = (
 				8415B5CE1D05A27D00FBA8E7 /* Profile */,
-				842EF3391CF97CCA001B775E /* Guide */,
-				842EF33C1CF97CCA001B775E /* Home */,
+				842EF3391CF97CCA001B775E /* NewFeature */,
 				842EF3411CF97CCA001B775E /* Main */,
+				842EF33C1CF97CCA001B775E /* Home */,
+				84F255A51D50F5FB00348C53 /* Guide */,
 				842EF3441CF97CCA001B775E /* Person */,
 				842EF3471CF97CCA001B775E /* Setting */,
 				842EF34A1CF97CCA001B775E /* TieBar */,
@@ -242,13 +263,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		842EF3391CF97CCA001B775E /* Guide */ = {
+		842EF3391CF97CCA001B775E /* NewFeature */ = {
 			isa = PBXGroup;
 			children = (
-				842EF33A1CF97CCA001B775E /* WOTGuideViewController.h */,
-				842EF33B1CF97CCA001B775E /* WOTGuideViewController.m */,
+				84F255A11D50EFC500348C53 /* View */,
+				84F2559C1D50AB7A00348C53 /* FlowLayout */,
+				84F2559B1D50AB6C00348C53 /* Controller */,
 			);
-			path = Guide;
+			path = NewFeature;
 			sourceTree = "<group>";
 		};
 		842EF33C1CF97CCA001B775E /* Home */ = {
@@ -288,6 +310,7 @@
 				842EF3491CF97CCA001B775E /* WOTSettingTableViewController.m */,
 				843E86BE1CFE870400EC36C4 /* WOTSettingTableViewCell.h */,
 				843E86BF1CFE870400EC36C4 /* WOTSettingTableViewCell.m */,
+				84E368B61D48AA42005C4A59 /* setting.plist */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -309,13 +332,6 @@
 				842EF34F1CF97CCA001B775E /* WOTVideoViewController.m */,
 			);
 			path = Video;
-			sourceTree = "<group>";
-		};
-		842EF3501CF97CCA001B775E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		84B9D5BE1CF3F670006FC03C = {
@@ -350,7 +366,6 @@
 				84559A671CF57BF2008C591B /* PrefixHeader.pch */,
 				84B9D5DB1CF3F670006FC03C /* Info.plist */,
 				84B9D5CA1CF3F670006FC03C /* Supporting Files */,
-				8415B5D91D05B9DA00FBA8E7 /* leftController.plist */,
 			);
 			path = WOTPlus;
 			sourceTree = "<group>";
@@ -397,6 +412,54 @@
 				84F12D591CF9B20C0049FC58 /* WOTTieBarWebView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84F2558F1D50995900348C53 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84F255901D50995900348C53 /* guide0.mp4 */,
+				84F255911D50995900348C53 /* guide1.mp4 */,
+				84F255921D50995900348C53 /* guide2.mp4 */,
+				84F255931D50995900348C53 /* guide3.mp4 */,
+			);
+			name = Resource;
+			path = View/Resource;
+			sourceTree = "<group>";
+		};
+		84F2559B1D50AB6C00348C53 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F255981D50AB5E00348C53 /* WOTNewFeatureCollectionViewController.h */,
+				84F255991D50AB5E00348C53 /* WOTNewFeatureCollectionViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84F2559C1D50AB7A00348C53 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				84F2559E1D50EF3100348C53 /* WOTFlowLayout.h */,
+				84F2559F1D50EF3100348C53 /* WOTFlowLayout.m */,
+			);
+			name = FlowLayout;
+			sourceTree = "<group>";
+		};
+		84F255A11D50EFC500348C53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F255A21D50EFE500348C53 /* WOTNewFeatureCollectionViewCell.h */,
+				84F255A31D50EFE500348C53 /* WOTNewFeatureCollectionViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84F255A51D50F5FB00348C53 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				84F255A61D50F63200348C53 /* WOTGuideViewController.h */,
+				84F255A71D50F63200348C53 /* WOTGuideViewController.m */,
+			);
+			path = Guide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,8 +577,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F255941D50995900348C53 /* guide0.mp4 in Resources */,
+				84F255961D50995900348C53 /* guide2.mp4 in Resources */,
+				84F255971D50995900348C53 /* guide3.mp4 in Resources */,
 				84B9D5DA1CF3F670006FC03C /* LaunchScreen.storyboard in Resources */,
+				84E368B71D48AA42005C4A59 /* setting.plist in Resources */,
 				84B9D5D71CF3F670006FC03C /* Assets.xcassets in Resources */,
+				84F255951D50995900348C53 /* guide1.mp4 in Resources */,
 				8415B5DA1D05B9DA00FBA8E7 /* leftController.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,11 +741,14 @@
 				842EF3581CF97CCA001B775E /* WOTVideoViewController.m in Sources */,
 				842EF3571CF97CCA001B775E /* WOTTieBarViewController.m in Sources */,
 				8415B5D51D05B59A00FBA8E7 /* WOTPersonViewController.m in Sources */,
+				84F255A41D50EFE500348C53 /* WOTNewFeatureCollectionViewCell.m in Sources */,
 				84B9D5CC1CF3F670006FC03C /* main.m in Sources */,
-				842EF3511CF97CCA001B775E /* WOTGuideViewController.m in Sources */,
+				84F255A81D50F63200348C53 /* WOTGuideViewController.m in Sources */,
 				842EF3531CF97CCA001B775E /* WOTHomeTableViewController.m in Sources */,
 				843E86C01CFE870400EC36C4 /* WOTSettingTableViewCell.m in Sources */,
+				84F255A01D50EF3100348C53 /* WOTFlowLayout.m in Sources */,
 				842EF3541CF97CCA001B775E /* WOTMainTabBarController.m in Sources */,
+				84F2559A1D50AB5E00348C53 /* WOTNewFeatureCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
