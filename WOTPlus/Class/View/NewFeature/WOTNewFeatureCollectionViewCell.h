@@ -10,4 +10,8 @@
 
 @interface WOTNewFeatureCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) UIImage * _Nonnull startImage;
+
+@property (nonatomic, copy) NSString * _Nonnull moviePath;
+
 @end

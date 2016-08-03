@@ -12,24 +12,25 @@
 
 @interface WOTNewFeatureCollectionViewController ()
 @property (nonatomic, strong) UIPageControl *pageControl;
+@property(nonatomic,assign,getter=isMovieFinished) BOOL movieFinished;
 
 
 @end
 
 @implementation WOTNewFeatureCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"NewFeatureCell";
 
 
 
--(instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout
+-(instancetype)init
 {
     return [super initWithCollectionViewLayout:[[WOTFlowLayout alloc]init]];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setup];
  }
 - (void)setup
 {
@@ -37,10 +38,6 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerClass:[WOTNewFeatureCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
 
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -54,14 +51,26 @@ static NSString * const reuseIdentifier = @"Cell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     WOTNewFeatureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
+    cell.moviePath = self.guideMoviePathArr[indexPath.row];
+    cell.startImage = [UIImage imageNamed:self.guideImagesArr[indexPath.row]];
     
-    // Configure the cell
     
     return cell;
 }
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 #pragma mark <UICollectionViewDelegate>
-
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == self.guideImagesArr.count-1 && self.isMovieFinished) {
+        if (self.lastPlayFinished) {
+            self.lastPlayFinished();
+        }
+    }
+}
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {

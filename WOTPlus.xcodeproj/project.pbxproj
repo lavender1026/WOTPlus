@@ -266,9 +266,9 @@
 		842EF3391CF97CCA001B775E /* NewFeature */ = {
 			isa = PBXGroup;
 			children = (
-				84F255A11D50EFC500348C53 /* View */,
-				84F2559C1D50AB7A00348C53 /* FlowLayout */,
 				84F2559B1D50AB6C00348C53 /* Controller */,
+				84F2559C1D50AB7A00348C53 /* FlowLayout */,
+				84F255A11D50EFC500348C53 /* View */,
 			);
 			path = NewFeature;
 			sourceTree = "<group>";

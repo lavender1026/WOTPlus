@@ -11,4 +11,5 @@
 @interface WOTNewFeatureCollectionViewController : UICollectionViewController
 @property (nonatomic, strong) NSArray *guideImagesArr;
 @property (nonatomic, strong) NSArray *guideMoviePathArr;
+@property (nonatomic, copy) void (^lastPlayFinished)();
 @end
