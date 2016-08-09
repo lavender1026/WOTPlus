@@ -36,10 +36,17 @@ static NSString * const reuseIdentifier = @"NewFeatureCell";
 {
     
     [self.collectionView registerClass:[WOTNewFeatureCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieFinished) name:@"playFinished" object:nil];
 }
-
+- (void)movieFinished
+{
+    self.movieFinished = YES;
+}
+-(void)dealloc
+{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 #pragma mark <UICollectionViewDataSource>
 
 
@@ -53,7 +60,7 @@ static NSString * const reuseIdentifier = @"NewFeatureCell";
     
     cell.moviePath = self.guideMoviePathArr[indexPath.row];
     cell.startImage = [UIImage imageNamed:self.guideImagesArr[indexPath.row]];
-    
+    self.movieFinished = NO;
     
     return cell;
 }

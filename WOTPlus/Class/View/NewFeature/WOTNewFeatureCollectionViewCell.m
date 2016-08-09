@@ -11,7 +11,7 @@
 
 @interface WOTNewFeatureCollectionViewCell ()
 
-@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, weak) UIImageView *imageView;
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
 
 @end
@@ -39,6 +39,7 @@
         player.controlStyle = MPMovieControlStyleNone;
         [self.contentView addSubview:player.view];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerDisplayChange) name:MPMoviePlayerReadyForDisplayDidChangeNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playFinished) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
         _moviePlayer = player;
     }
     return _moviePlayer;
@@ -48,6 +49,10 @@
     if (self.moviePlayer.readyForDisplay) {
         [self.moviePlayer.backgroundView addSubview:self.imageView];
     }
+}
+- (void)playFinished
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"playFinished" object:nil];
 }
 //MARK:-setter
 -(void)setMoviePath:(NSString *)moviePath
